@@ -206,3 +206,26 @@ body{
     line-height: 130%;
   }
 /* Lecturers end */
+
+
+/* Format start */
+.format{
+  background-color: var(--primary-color);
+  padding: 120px 0;
+  color: #FDFDFD;
+}
+
+.format__inner{
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.format__content{
+  max-width: 500px;
+}
+
+.format__text{
+  margin-bottom: 50px;
+}
+/* Format end */
