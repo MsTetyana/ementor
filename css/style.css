@@ -47,6 +47,7 @@ body{
   border-radius: 0 20px 0 20px;
 }
 
+/* Top start */
 .top{
   background-color: var(--primary-color);
   color: #FDFDFD;
@@ -129,6 +130,32 @@ body{
   line-height: 1;
   margin-bottom: 15px;
 }
+/* Top end */
 
 
+/* Numbers start */
+.numbers__list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
+.numbers__item{
+  max-width: 270px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.numbers__number{
+  color: var(--primary-color);
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.numbers__text{
+  font-size: 14px;
+  line-height: 120%;
+}
+/* Numbers end */
