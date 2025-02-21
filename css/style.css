@@ -55,7 +55,7 @@ body{
 
 .title{
   font-size: 58px;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -232,6 +232,9 @@ body{
 
 
 /* Courses start */
+.courses{
+  text-align: center;
+}
 .courses__title{
   text-align: center;
   margin-bottom: 60px;
@@ -241,6 +244,7 @@ body{
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 60px;
 }
 
 .courses__item{
@@ -253,3 +257,78 @@ body{
   line-height: 1;
 }
 /* Courses end */
+
+
+/* Rate start */
+.rate{
+  background-image: url(../images/rate-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 578px;
+}
+
+.rate__inner{
+  max-width: 508px;
+  margin-left: auto;
+  padding-top: 120px;
+}
+
+.rate__content{
+  margin-bottom: 50px;
+}
+/* Rate end */
+
+/* Footer start */
+.footer{
+  border-top: 1px solid rgba(53, 58, 90, .1);
+}
+
+.footer__main{
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo{
+  margin-bottom: 27px;
+}
+
+.footer__main-info{
+  margin-bottom: 47px;
+  font-size: 14px;
+  max-width: 270px;
+}
+
+.footer__main-social{
+  display: flex;
+  gap: 25px;
+}
+
+.footer__main-list-title{
+  margin-bottom: 31px;
+}
+
+.footer__main-list-item + .footer__main-list-item{
+  margin-top: 20px;
+}
+
+.footer__main-list-text{
+  max-width: 182px;
+}
+
+.footer__bottom{
+  padding: 30px 0;
+  border-top: 1px solid rgba(53, 58, 90, .1);
+}
+
+.footer__bottom-content{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.footer__bottom-right{
+  display: flex;
+  gap: 30px;
+}
+/* Footer end */
