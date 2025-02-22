@@ -67,7 +67,7 @@ body{
   height: 800px;
 }
 
-.header{
+.header-top{
   padding-top: 40px;
   padding-bottom: 50px;
 }
@@ -332,3 +332,43 @@ body{
   gap: 30px;
 }
 /* Footer end */
+
+
+/* START COURSES PAGE STYLE */
+.header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500px;
+  padding: 40px 0;
+}
+
+/* bresdcrumbs style start */
+.breadcrumbs{
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs__list{
+  display: flex;
+}
+
+.breadcrumbs__item{
+  padding-right: 34px;
+  position: relative;
+}
+.breadcrumbs__item:last-child{
+  font-size: 14px;
+  opacity: .5;;
+}
+.breadcrumbs__item::after{
+  position: absolute;
+  content:url(../images/arrow-orange-right.svg);
+  right: 15px;
+}
+.breadcrumbs__item:last-child:after{
+  display: none;
+}
+/* bresdcrumbs style end */
+
+/* END COURSES PAGE STYLE */
