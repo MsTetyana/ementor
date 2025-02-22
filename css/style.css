@@ -357,18 +357,76 @@ body{
   padding-right: 34px;
   position: relative;
 }
+
 .breadcrumbs__item:last-child{
   font-size: 14px;
   opacity: .5;;
 }
+
 .breadcrumbs__item::after{
   position: absolute;
   content:url(../images/arrow-orange-right.svg);
   right: 15px;
 }
+
 .breadcrumbs__item:last-child:after{
   display: none;
 }
 /* bresdcrumbs style end */
+
+
+/* design style start */
+.design-title{
+  margin-bottom: 40px;
+}
+
+.design__img{
+  display: block;
+  margin-bottom: 40px;
+}
+
+.design__content{
+  margin-bottom: 80px;
+}
+
+.design__content-title{
+  max-width: 870px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+
+.design__content-text{
+  max-width: 800px;
+}
+.design__content-text + .design__content-text{
+  margin-top: 25px;
+}
+
+.design__numbers-list{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.design__numbers-item{
+  max-width: 270px;
+  text-align: center;
+}
+
+.design__numbers-number{
+  color: var(--primary-color);
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+
+.design__numbers-text{
+  font-size: 14px;
+  line-height: 120%;
+}
+/* design style start */
 
 /* END COURSES PAGE STYLE */
