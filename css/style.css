@@ -516,5 +516,51 @@ body{
 /* discount style end */
 
 
+/* accordeon style srart */
+.accordeon-title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.accordeon__item{
+  max-width: 830px;
+  /* padding: 30px 130px 30px 30px; */
+  margin: 0 auto;
+  box-shadow: 5px 5px 30px 0 rgba(101, 101, 101, .12);
+  margin-top: 30px;
+  position: relative;
+}
+
+
+.accordeon__item::before{
+  content: url(../images/open.svg);
+  position: absolute;
+  right: 30px;
+  top: 28px;
+}
+
+.accordeon__triger{
+  padding: 30px 130px 30px 30px;
+  cursor: pointer;
+}
+
+.accordeon__question{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+
+.accordeon__answer{
+  display: none;
+}
+
+.accordeon__item--active .accordeon__answer{
+  display: block;
+}
+.accordeon__item--active.accordeon__item::before {
+  content: url(../images/close.svg);
+}
+/* accordeon style end */
 
 /* END COURSES PAGE STYLE */
