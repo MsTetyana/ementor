@@ -286,6 +286,7 @@ body{
 /* Footer start */
 .footer{
   border-top: 1px solid rgba(53, 58, 90, .1);
+  padding-top: 20px;
 }
 
 .footer__main{
@@ -302,7 +303,6 @@ body{
 .footer__main-info{
   margin-bottom: 47px;
   font-size: 14px;
-  max-width: 270px;
 }
 
 .footer__main-social{
@@ -529,7 +529,6 @@ body{
 
 .accordeon__item{
   max-width: 830px;
-  /* padding: 30px 130px 30px 30px; */
   margin: 0 auto;
   box-shadow: 5px 5px 30px 0 rgba(101, 101, 101, .12);
   margin-top: 30px;
@@ -542,6 +541,7 @@ body{
   position: absolute;
   right: 30px;
   top: 28px;
+  z-index: -1;
 }
 
 .accordeon__triger{
@@ -579,6 +579,47 @@ body{
 
 
 /* media start */
+@media(max-width: 1220px){
+  .courses__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rate{
+    background-image: none;
+    background-color: var(--primary-color);
+    color: #FDFDFD;
+    height: 100%;
+  }
+  .rate__inner{
+    max-width: 100%;
+    margin-left: 0;
+    padding-bottom: 120px;
+  }
+  .rate-title{
+    text-align: center;
+  }
+  .button-link-rate{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .design__img{
+    width: 100%;
+  }
+
+  .design__numbers-item{
+    max-width: 200px;
+  }
+
+  .knowledge__inner{
+    align-items: center;
+    gap: 10px;
+  }
+
+}
 @media(max-width: 1100px){
   .top__img-one,
   .top__img-two{
@@ -627,6 +668,41 @@ body{
     
   }
  
+  .format__inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .format-img{
+    width: 95%;
+  }
+  .format__title{
+    font-size: 43px;
+  }
+
+  .knowledge{
+    padding: 60px 0;
+  }
+  .knowledge__inner{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .title-knowledge{
+    text-align: center;
+  }
+  .knowledge__img{
+    order: -1;
+  }
+  .knowledge__text{
+    max-width: 100%;
+    text-align: center;
+  }
+  .button-link-knowledge{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media(max-width: 900px){
@@ -657,8 +733,40 @@ body{
     font-size: 16px;
     line-height: 130%;
   }
+
+  .format__content{
+    max-width: 100%;
+  }
+  .format__inner{
+    display: block;
+  }
+  .format-img{
+    display: none;
+  }
+  .button-link-format{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer__main{
+    flex-wrap: wrap;
+    gap: 40px 75px;
+  }
+
+  .design__numbers-item{
+    max-width: 130px;
+  }
 }
 
+@media(max-width: 800px){
+  .footer__main{
+    flex-wrap: wrap;
+    gap: 40px 20px;
+  }
+  .design__img{
+    display: none;
+  }
+}
 
 @media(max-width: 700px){
   .container{
@@ -773,12 +881,51 @@ body{
   .lecturers__list{
     gap: 10px;
   }
+
+  .courses__list{
+    gap: 10px;
+  }
+  .courses__item{
+    padding: 20px 0;
+  }
+
+  .footer__bottom{
+    padding: 10px 0;
+  }
+  .footer__bottom-content{
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center;
+  }
+
+  .design__numbers-list{
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .design__numbers-item{
+    max-width: 40%;
+  }
+}
+
+@media(max-width: 615px){
+  .footer__main-list-text{
+    max-width: 100%;
+  }
 }
 
 @media(max-width: 570px){
+  .title{
+    font-size: 35px;
+  }
   .lecturers__list{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+
+  .courses__list{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -787,7 +934,7 @@ body{
     height: 600px;
   }
   .top__title{
-    font-size: 36px;
+    font-size: 34px;
     margin-top: 20px;
   }
   .top__box{
@@ -822,5 +969,65 @@ body{
   .button-link--mob{
     margin: 30px auto 0 auto;
   }
+
+  .footer-logo{
+    margin-bottom: 15px;
+  }
+  .footer__main-info,
+  .footer__main-list-title{
+    margin-bottom: 15px;
+  }
+  .footer__main{
+    padding: 30px 0;
+  }
+ 
+  .footer__bottom-right{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .footer__bottom-left{
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .breadcrumbs__item{
+    padding-right: 20px;
+  }
+  .breadcrumbs__item::after{
+    right: 7px;
+  }
+
+  .design__numbers-list{
+    gap: 20px 10px;
+  }
+  .design__numbers-item{
+    max-width: 48%;
+  }
 }
+
+@media(max-width: 417px){
+  .footer__main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px 5px;
+  }
+  .footer__main-list-link{
+    font-size: 15px;
+  }
+  .footer__main-list-text{
+    max-width: 150px;
+    font-size: 13px;
+  }
+  .footer__main-list-link{
+    font-size: 13px;
+  }
+  .footer__main-list-item + .footer__main-list-item{
+    margin-top: 10px;
+  }
+}
+
 /* media end */
