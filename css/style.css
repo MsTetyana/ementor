@@ -619,6 +619,9 @@ body{
     gap: 10px;
   }
 
+  .discount{
+    background-position-x: center;
+  }
 }
 @media(max-width: 1100px){
   .top__img-one,
@@ -702,6 +705,17 @@ body{
   .button-link-knowledge{
     display: block;
     margin: 0 auto;
+  }
+  .course-learning__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .course-learning__item{
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
   }
 }
 
@@ -907,11 +921,28 @@ body{
   .design__numbers-item{
     max-width: 40%;
   }
+
+  .discount__inner{
+    padding-left: 60px;
+  }
+
+  .accordeon__item::before{
+    right: 15px;
+    top: 19px;
+  }
+  .accordeon__triger{
+    padding: 20px 60px 20px 15px;
+    cursor: pointer;
+  }
 }
 
 @media(max-width: 615px){
   .footer__main-list-text{
     max-width: 100%;
+  }
+
+  .knowledge__img{
+    width: 90%;
   }
 }
 
@@ -924,8 +955,29 @@ body{
     gap: 30px;
   }
 
+
   .courses__list{
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .course-learning__list{
+    gap: 10px;
+  }
+
+  .discount{
+    background-position-x: right;
+    padding: 70px 0;
+  }
+  .discount__inner{
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .accordeon__question{
+    font-size: 19px;
+  }
+  .accordeon__answer {
+    font-size: 15px;
   }
 }
 
@@ -1006,6 +1058,17 @@ body{
   .design__numbers-item{
     max-width: 48%;
   }
+
+  .course-learning__list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .accordeon__question{
+    font-size: 17px;
+  }
+  .accordeon__answer {
+    font-size: 14px;
+  }
 }
 
 @media(max-width: 417px){
@@ -1027,6 +1090,15 @@ body{
   }
   .footer__main-list-item + .footer__main-list-item{
     margin-top: 10px;
+  }
+
+  
+  .design__numbers-item{
+    max-width: 80%;
+  }
+
+  .knowledge__img{
+    display: none;
   }
 }
 
